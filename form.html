@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Registration Form</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+
+		<div class="wrapper" style="background-image: url('images/bg-registration-form-1.jpg');">
+			<div class="inner">
+				<div class="image-holder">
+					<img src="images/registration-form-1.jpg" alt="">
+				</div>
+				<form>
+					<h3>Registration Form</h3>
+					<div class="form-group">
+						<input type="text" placeholder="First Name" id="fname" class="form-control" required>
+						<input type="text" placeholder="Last Name" id="lname" class="form-control"
+						required>
+					</div>
+					<div class="form-wrapper">
+						<input type="text" placeholder="Username" id="uname" class="form-control"
+						required>
+						<i class="zmdi zmdi-account"></i>
+						<p><span id = 'checker' class="unamechecker"></span></p>
+						<p id="miss1"></p>
+
+					</div>
+					<div class="form-wrapper">
+						<input type="text" placeholder="Email Address" id="mail" class="form-control" onblur="checkEmail();" required>
+						<i class="zmdi zmdi-email"></i>
+						<div>
+							<p id='miss3'></p>
+							<p id="misss"></p>
+						</div>
+					</div>
+					<div class="form-wrapper">
+						<select name="" id="" class="form-control">
+							<option value="" disabled selected>Gender</option>
+							<option name="gender" value="male" required>Male</option>
+							<option name="gender" value="female" required>Female</option>
+						</select>
+						<i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
+					</div>					
+					<div class="form-wrapper" name="frmCheckPassword" id="frmCheckPassword" >
+						<div><input type="password" placeholder="Password" id="password" class="form-control" onKeyUp="checkPasswordStrength();" required>
+						<i class="zmdi zmdi-lock"></i></div>
+						<div id="password-strength-status"></div>
+					</div>
+					<input id="submit" type="submit" value="Register">
+						<i class="zmdi zmdi-arrow-right"></i>
+				</form>
+
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+		<script src="form.js"></script>
+	</body>
+</html>
