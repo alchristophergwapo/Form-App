@@ -88,7 +88,7 @@ hr {
 }
 
 input {
-	border-radius: 20px;
+	border-radius: 10px;
 	border-color: rgb(120,120,120);
 	border-style: groove;
 	border-width: 10px;
@@ -99,6 +99,7 @@ input {
 	padding-left: 20px;
 	font-family: verdana;
 }
+
 
 
 
